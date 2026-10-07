@@ -1,0 +1,10 @@
+# Estado local de navegação do Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Arquivos locais da IA
+.codex/
+
+# Arquivos temporários do sistema
+Thumbs.db
+.DS_Store
