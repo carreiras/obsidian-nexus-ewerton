@@ -1,3 +1,5 @@
+# Como registrar meus laboratórios
+
 O **Laboratório DevSecOps é seu caderno de práticas**: você registra o que tentou fazer, o que aconteceu e o que aprendeu. Não precisa preencher tudo agora; ele cresce conforme você realiza experimentos.
 
 Na seção **Experimentos**, registre cada prática. Se o registro for curto, pode ficar ali mesmo. Se precisar de comandos, código, imagens ou explicações maiores, crie uma nota própria e coloque o link nessa seção.
