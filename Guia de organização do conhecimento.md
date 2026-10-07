@@ -92,4 +92,3 @@ Ao concluir alterações no vault, listar na resposta final todos os arquivos cr
 
 ## Manutenção das instruções
 Manter o procedimento detalhado neste guia. O AGENTS.md contém as regras essenciais e a orientação de consultá-lo. Objetivos e contexto dos assuntos ficam nas próprias notas; evitar repetir o fluxo em cada assunto.
-
