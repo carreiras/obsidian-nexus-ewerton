@@ -14,6 +14,8 @@ Combinar ferramentas que examinam objetos diferentes: código, dependências, in
 | OWASP Dependency-Check | SCA: detectar vulnerabilidades divulgadas em dependências | Identificação dos componentes, fontes e atualização dos dados exigem atenção |
 | KICS | Analisar IaC para encontrar configurações inseguras e problemas de conformidade | Examina arquivos e regras; não comprova sozinho o estado real do ambiente |
 | ZAP | DAST de aplicações web, incluindo APIs; análise automatizada e manual | Depende de aplicação acessível e da cobertura de rotas, autenticação e estados |
+| Docker Scout | Inventário de componentes e vulnerabilidades de imagens, recomendações de base e comparação de versões | Dados, identificação de componentes, filtros e serviços utilizados determinam a cobertura |
+| Trivy | Vulnerabilidades de componentes, segredos e configurações, conforme alvo e scanners habilitados | Nem todo alvo habilita todas as análises; manter bases e examinar filtros |
 
 Fontes oficiais: [Horusec](https://github.com/ZupIT/horusec), [Dependency-Check](https://github.com/dependency-check/DependencyCheck), [KICS](https://github.com/Checkmarx/kics), [ZAP — introdução](https://www.zaproxy.org/getting-started/).
 
@@ -49,6 +51,14 @@ O projeto anunciou sua associação à Checkmarx em setembro de 2024 mantendo a 
 
 Para uma futura prática, definir alvo de teste autorizado, aplicação acessível, autenticação e caminhos a explorar. Não assumir que uma lista de endpoints ou ausência de alertas representa cobertura completa.
 
+## Docker Scout e Trivy — imagens e componentes
+
+[[Docker Scout — análise de imagens e vulnerabilidades]] ensina a analisar uma imagem publicada, interpretar recomendações, comparar versões e definir um gate por severidade. Scout utiliza inventário de componentes e dados de vulnerabilidades; não comprova exploração na aplicação. [Docker — Scout](https://docs.docker.com/scout/).
+
+[[Trivy — vulnerabilidades, segredos e configurações inseguras]] apresenta análise de imagem, configuração e segredos em arquivos, relatórios e códigos de saída. Trivy é open source e a seleção de scanners delimita o que será examinado. [Aqua Security — Trivy](https://github.com/aquasecurity/trivy).
+
+**Como comparar:** usar o mesmo digest e plataforma, registrar versões e datas, conferir componentes, fontes e filtros. Não comparar apenas totais: um scan de vulnerabilidades e outro que inclua segredos examinam objetos diferentes. Não há benchmark entre essas ferramentas registrado no vault.
+
 ## Integração e tratamento dos resultados
 
 Roteiro de planejamento, a adaptar ao repositório:
@@ -69,6 +79,8 @@ Uma opção de planejamento é experimentar controles com ferramentas open sourc
 Não há estudo comparativo registrado nesta nota que comprove menos falsos positivos em ferramentas comerciais ou superioridade do KICS sobre Terrascan. Essas comparações exigem critérios e evidências no contexto avaliado. Contar mais alertas, isoladamente, não comprova maior eficácia.
 
 ## Revisão técnica e continuidade
+
+2026-10-07 — Acrescentadas visão geral e conexões para Docker Scout e Trivy; comandos e exemplos desenvolvidos nas notas próprias. Nenhum scanner foi executado.
 
 2026-10-07 — Verificadas as funções e classificações de Horusec, Dependency-Check, KICS e ZAP nas fontes oficiais. KICS foi identificado como open source; separada a instalação do Dependency-Check da atualização de dados. Fontes citadas nas seções.
 

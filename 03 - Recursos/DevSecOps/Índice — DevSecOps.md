@@ -28,7 +28,9 @@ Criar um projeto apenas quando houver uma entrega concreta a acompanhar, vincula
 - [[Requisitos de segurança]] — propriedades e critérios verificáveis.
 - [[Modelagem de ameaças e STRIDE]] — análise de ameaças.
 - [[Verificações de segurança — SAST, DAST e SCA]] — técnicas complementares.
-- [[Ferramentas de segurança na pipeline]] — Horusec, Dependency-Check, KICS e ZAP; visão geral e limitações.
+- [[Ferramentas de segurança na pipeline]] — visão geral, objetos de análise e limitações.
+- [[Docker Scout — análise de imagens e vulnerabilidades]] — componentes, CVEs, recomendações e gates.
+- [[Trivy — vulnerabilidades, segredos e configurações inseguras]] — imagens, arquivos, relatórios e gates.
 - [[Docker — imagens, containers e Dockerfile]] — construção, distribuição, execução e portas.
 - [[Hardening e operação segura]] — configuração e acompanhamento.
 - [[Nmap — portas e serviços]] — interpretação e limites de uma varredura.

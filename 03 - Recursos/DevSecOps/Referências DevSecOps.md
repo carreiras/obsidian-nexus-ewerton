@@ -94,7 +94,32 @@ Projeto pessoal: [carreiras/devsecops-with-github-actions](https://github.com/ca
 - [ZAP — associação à Checkmarx, anúncio de 2024](https://www.zaproxy.org/blog/2024-09-24-zap-has-joined-forces-with-checkmarx/).
 - [GitHub — sintaxe de workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax) — reconsultada para tratamento de falhas e security gates.
 
+## Docker Scout e Trivy — fontes consultadas em 2026-10-07
+
+- [Docker Scout — visão geral](https://docs.docker.com/scout/).
+- [Docker Scout — instalação](https://docs.docker.com/scout/install/).
+- [Docker Scout — configuração inicial](https://docs.docker.com/scout/quickstart/).
+- [Docker Scout — quickview](https://docs.docker.com/reference/cli/docker/scout/quickview/).
+- [Docker Scout — cves](https://docs.docker.com/reference/cli/docker/scout/cves/).
+- [Docker Scout — recommendations](https://docs.docker.com/reference/cli/docker/scout/recommendations/).
+- [Docker Scout — compare](https://docs.docker.com/reference/cli/docker/scout/compare/) — comando experimental na documentação consultada.
+- [Docker Scout — integração com GitHub Actions](https://docs.docker.com/scout/integrations/ci/gha/).
+- [Aqua Security — Trivy](https://github.com/aquasecurity/trivy).
+- [Trivy — instalação](https://trivy.dev/docs/latest/getting-started/installation/).
+- [Trivy — imagens](https://trivy.dev/docs/latest/guide/target/container_image/).
+- [Trivy — vulnerabilidades](https://trivy.dev/docs/latest/guide/scanner/vulnerability/).
+- [Trivy — configurações](https://trivy.dev/docs/latest/guide/scanner/misconfiguration/).
+- [Trivy — segredos](https://trivy.dev/docs/latest/guide/scanner/secret/).
+- [Trivy — relatórios](https://trivy.dev/docs/latest/configuration/reporting/).
+- [Trivy — scanners, códigos de saída e fim de vida](https://trivy.dev/docs/latest/configuration/others/).
+- [Trivy — bases e atualização](https://trivy.dev/docs/latest/configuration/db/).
+
+As páginas `latest` descrevem documentação móvel; os exemplos não fixam uma release instalada nem foram executados. Conferir a ajuda da versão efetivamente utilizada antes da implementação.
+
 ## Notas relacionadas
+
+- [[Docker Scout — análise de imagens e vulnerabilidades]]
+- [[Trivy — vulnerabilidades, segredos e configurações inseguras]]
 - [[Laboratório — Docker — construção, publicação e execução de imagem]]
 - [[Laboratório — GitHub Actions — jobs e eventos]]
 - [[Laboratório — GitHub Actions — action composta Soma]]
